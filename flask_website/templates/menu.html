@@ -1,24 +1,58 @@
 {% extends "base.html" %}
 {% block body %}
 {% include 'partials/jumbotron.html' %}
-        <div class="container">
-            <div class="row">
-                {% for drink in drinks %}
+    <!--<div class="text-center border border-3 bg-gradient bg-secondary text-danger"></div>-->
+    <!--text-center border border-3 border border-danger rounded bg-success-->
+    <p class="text-center border border-3 bg-gradient bg-secondary text-white p-2 display-6">DRINKS</p>
+    <div class="container">
+        <div class="row">
+            {% for item in items %}
+                {% if item.Category == 'Drinks' and item.Title != 'Macchiato' %}
                     <div class="col-md-3 mb-2 text-center border border-1 rounded border-success" id="MenuItems">
-                        <p class="text-uppercase border border-1 border-danger">{{drink.Category}}</p>
-                        <img class="mt-4 rounded img-fluid border border-2 border-dark" src="{{drink.PicURL}}" width=50% >
-                        <p class="pt-2 m-0 fw-bolder">{{drink.Title}}</p>
-                        <p class="p-0 m-0">{{drink.Price}}</p>
-                        <p class="p-0">{{drink.Description}}</p>
+                        <img class="mt-4 rounded img-fluid border border-2 border-dark" src="{{item.PicURL}}" width=50% >
+                        <p class="pt-2 m-0 fw-bolder">{{item.Title}}</p>
+                        <p class="p-0 m-0">{{item.Price}}</p>
+                        <p class="p-0">{{item.Description}}</p>
                     </div>
-                {% endfor %}
-            </div>
+
+                {% endif %}
+            {% endfor %}
         </div>
+    </div>
+    <p class="text-center border border-3 bg-gradient bg-secondary text-white p-2 display-6 mt-3">MEALS</p>
+    <div class="container">
+        <div class="row">
+            {% for item in items %}
+                {% if item.Category == 'Meals' %}
+                    <div class="col-md-3 mb-2 text-center border border-1 rounded border-success" id="MenuItems">
+                        <img class="mt-4 rounded img-fluid border border-2 border-dark" src="{{item.PicURL}}" width=50% >
+                        <p class="pt-2 m-0 fw-bolder">{{item.Title}}</p>
+                        <p class="p-0 m-0">{{item.Price}}</p>
+                        <p class="p-0">{{item.Description}}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <p class="text-center border border-3 bg-gradient bg-secondary text-white p-2 display-6 mt-3">DESSERTS</p>
+    <div class="container">
+        <div class="row">
+            {% for item in items %}
+                {% if item.Category == 'Desserts' %}
+                    <div class="col-md-4 mb-2 text-center border border-1 rounded border-success" id="MenuItems">
+                        <img class="mt-4 rounded img-fluid border border-2 border-dark" src="{{item.PicURL}}" width=50% >
+                        <p class="pt-2 m-0 fw-bolder">{{item.Title}}</p>
+                        <p class="p-0 m-0">{{item.Price}}</p>
+                        <p class="p-0">{{item.Description}}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
 {% endblock body %}
 {% block footer %}
 {% include 'partials/footer.html' %}
 {% endblock footer %}
-
 
 
 

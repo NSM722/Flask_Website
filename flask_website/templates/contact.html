@@ -1,61 +1,22 @@
 {% extends "base.html" %}
 {% block body %}
     {% include 'partials/jumbotron.html' %}
-    <div class="container-fluid my-2" id="Contact_Pic">
+    <div class="container-fluid my-2 border border-2 border border-dark" id="Contact_Pic">
       <!--Insert image-->
-        <div class="icons">
-          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.snapchat.com" target="_blank"><i class="fab fa-snapchat"></i></a>  
-          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a> 
-          <br>
-          <p class="text-uppercase mask"><i class="bi bi-telephone-inbound-fill"></i> Contact number : + 49157312345<br><i class="bi bi-mailbox2"></i>PLZ: 00100, Hamburg
-          </p>
-          <a href="mailto:customerservice@mkb.com"><i class="bi bi-envelope"></i>Email us here</a> 
-        </div>
-    </div>
-    <!--<div class="container text-center my-3">
+      <p class="text-uppercase mask text-success d-flex justify-content-end my-5 mx-5 display-3 text-bold"><i class="bi bi-telephone-inbound-fill mx-3"></i> Contact number : + 49157312345</p>
+      <p class="text-uppercase mask text-success d-flex justify-content-end my-5 mx-5 display-3"><i class="bi bi-mailbox2 mx-3"></i>PLZ: 00100, Hamburg</p>
+      <a class="text-uppercase mask text-success d-flex justify-content-end my-5 mx-5 display-3" href="mailto:customerservice@wbb.com"><i class="bi bi-envelope-fill mx-3"></i>Email us here</a>
+      <div class="icons mt-5">
         <div class="row">
           <div class="col">
-                <div class="icons">
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.snapchat.com" target="_blank"><i class="fab fa-snapchat"></i></a>  
-                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>  
-                </div>
-                <br>
-                <p> Contact number : + 49157312345
-                    <br>
-                    PLZ: 00100, Hamburg
-                </p> 
-                <a href="mailto:customerservice@mkb.com">Email us here</a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.snapchat.com" target="_blank"><i class="fab fa-snapchat"></i></a>  
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
-      </div>-->
-    <!--<form action="#" method="post">
-        <p>First Name:</p>
-        <p><input type="text" name="firstname" /></p>
-        <p><input type="submit" value="submit" /></p>
-    </form>-->
-     <!--<form class="comments-form">
-       <div class="comments-group" action='#' method='POST'>
-            <label>Name: </label>
-            <input type="text" name="first_name" placeholder="Firstname">
-        </div>
-        <div class="comments-group">
-          <label>Phone: </label>
-            <input type="text" name="Phone" placeholder="+49***********">
-        </div>
-        <div class="comments-group">
-          <label>Email: </label>
-            <input type="text" name="Emailaddress" placeholder="JaneDoe@email.com">
-        </div>
-        <div class="comments-group">
-          <label>Comments: </label>
-            <textarea name="comments"></textarea>
-        </div>
-        <input class="button" type="submit" value="Submit" name="Submit">
-      </form>-->
+      </div>  
+    </div>
 {% endblock body %}
 {% block footer %}
 {% include 'partials/footer.html' %}

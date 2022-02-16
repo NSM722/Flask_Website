@@ -36,7 +36,7 @@ def menu():
     url = "https://opensheet.vercel.app/1Xt48Tfm0Nf6ITDM-PaQx6PyVRNyJUPjRcy5UoqdKtsQ/Menu"
     response = requests.get(url)
     data = response.json()
-    return render_template('menu.html', title='Menu', drinks=data, content=jumbotron)
+    return render_template('menu.html', title='Menu', items=data, content=jumbotron)
 
 @app.route("/team")
 def team():
@@ -46,7 +46,7 @@ def team():
     }
     return render_template('team.html', title='Our Team', content=jumbotron)
 
-@app.route("/contact", methods=['POST', 'GET'])
+@app.route("/contact") #@app.route("/contact", methods=['POST', 'GET'])
 def contact():
     jumbotron = {
         "title": "Stay in touch! We love to hear from you",
@@ -59,7 +59,7 @@ def contact():
         return render_template('contact.html', title='Contact Us', content=jumbotron)"""
     return render_template('contact.html', title='Contact', content=jumbotron)
 
-@app.route("/users")
+"""@app.route("/users")
 def randomusers():
     jumbotron = {
         "title": "Coffee Bonanza - You Snooze You Lose!",
@@ -86,4 +86,4 @@ def test_page():
 
 @app.route("/<user>")
 def user_name(user):
-    return f'<h1>Thank you for your comments {user}, we will get back to you soon 🎃</h1>'
+    return f'<h1>Thank you for your comments {user}, we will get back to you soon 🎃</h1>'"""

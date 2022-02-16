@@ -30,7 +30,7 @@ body {
     position: relative;
 }
 #Contact_Pic{
-    background-image: url("https://res.cloudinary.com/dxxysm630/image/upload/v1638545251/homePage_bg_fhxha4.jpg");
+    background-image: url("https://res.cloudinary.com/dxxysm630/image/upload/v1636997129/bgpage2_g12qrw.jpg");
     height: 95vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,9 +67,9 @@ body {
     font-weight: bolder;
 }
 .icons {
-    padding: 15px;
+    padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: row;
 }
 .icons i {
