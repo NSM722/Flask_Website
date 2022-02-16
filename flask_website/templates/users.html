@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block body %}
+    {% include 'partials/jumbotron.html' %}
+        <div class="container mb-4 p-8">
+            <div class="row">
+                <div class="col text-center border border-3 border border-danger rounded bg-success">
+                    <p>Enter the number of your choice between 1 and 20, you only got one shot....</p>
+                    <input id="lucky_number" type="text" class="mb-2 border border-dark rounded-start rounded-end">
+                    
+                    <button type="button" class="btn btn-warning mx-3"><strong>Enter</strong></button>  
+                </div>
+            </div>
+        </div>
+        <div class="container mb-2">
+            <div class="row">
+                {% for person in users %}
+                    <div class="col-md-2 text-center">
+                        <img src="{{person.picture.large}}" class="rounded-circle border border-dark border border-2">
+                        <p class="pb-0 mb-0">{{person.name.first}} {{person.name.last}}</p>
+                        <p class="mb-4 mt-0 pt-0"><span class="flag-icon flag-icon-{{person.nat.lower()}}"></span></p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <canvas id="my-canvas"></canvas>
+{% endblock body %}
+{% block footer %}
+{% include 'partials/footer.html' %}
+{% endblock footer %}

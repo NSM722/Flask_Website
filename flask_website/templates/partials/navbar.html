@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success bg-gradient sticky-top">
+    <div class="container-fluid">
+      <!--used url_for for the logo pic with images file included in the same project file under the static folder-->
+      <!--<a class="navbar-brand" href="/home"><img src="{{ url_for('static', filename='website_images/Logo/main_logo.png') }}" alt="Logo" width="260px"></a>-->
+      <a class="navbar-brand" href="/home"><img src="https://res.cloudinary.com/dxxysm630/image/upload/v1636997128/main_logo_mgi7bc.png" alt="Logo" width="300px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">         
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home"><i class="fas fa-house-user"></i></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/menu"><i class="fas fa-coffee"></i> Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"  href="/about"><i class="fas fa-info-circle"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"  href="/team"><i class="fas fa-users"></i> Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"  href="/contact"><i class="fas fa-address-book"></i> Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"  href="/users"><i class="bi bi-award-fill"></i> Winners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"  href="/test"><i class="fas fa-address-book"></i> Test</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav> 

@@ -1,0 +1,137 @@
+.navbar-brand { /*style it & make it pop*/
+    opacity:100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    /*background-color: rgb(255, 247, 247);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;*/
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #ecf3ec;
+    font-weight: bold;
+
+}
+#homePageContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#bgImage {
+    background-image: url("https://picsum.photos/id/1060/1000/500");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#Contact_Pic{
+    background-image: url("https://res.cloudinary.com/dxxysm630/image/upload/v1638545251/homePage_bg_fhxha4.jpg");
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 70%;
+}
+
+#MenuItems img:hover {
+    cursor: pointer;
+    width: 80%;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    
+}
+#bgImage2 {
+    background-color: black;
+}
+#welcome_head {
+    color: blanchedalmond; 
+    font-weight: bolder;
+    opacity: 5px;
+}
+.carousel-item img {
+    height: 375px;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+.carousel-item h3 {
+    font-weight: bolder;
+}
+.carousel-caption p {
+    color:rgb(238, 171, 0);
+    font-weight: bolder;
+}
+.icons {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.icons i {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 6px 30px;
+
+}
+.icons i:hover{
+    cursor: pointer;
+}
+.icons a:nth-child(3) {
+    color: rgb(255, 255, 0);
+    opacity: 10px;
+}
+.icons a:last-child {
+    color: #a60059;
+    opacity: 25px;
+}
+.comments-form {
+    padding: 5px;
+    align-content: center;
+}
+  
+.comments-form .comments-group {
+    padding-bottom: 10px;
+}
+.comments-form label {
+    display: block;
+}
+.comments-form input[type="text"],
+.comments-form textarea {
+    padding: 5px;
+    width: 50%;
+}
+.comments-form .button {
+    padding: 10px 15px;
+    background-color: rgb(4, 32, 18);
+    color: goldenrod;
+}
+#mainfooter p {
+    margin: 2px;
+    font-size: 14px;
+    text-align: center;
+}
+#mainfooter p:hover {
+    color: black; 
+    cursor: pointer;
+}
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*position:absolute;
+    bottom:0;
+    width:100%;*/
+    /*width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: sticky;*/
+}
+

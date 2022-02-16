@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block body %}
+{% include 'partials/jumbotron.html' %}
+        <div class="container">
+            <div class="row">
+                {% for drink in drinks %}
+                    <div class="col-md-3 mb-2 text-center border border-1 rounded border-success" id="MenuItems">
+                        <p class="text-uppercase border border-1 border-danger">{{drink.Category}}</p>
+                        <img class="mt-4 rounded img-fluid border border-2 border-dark" src="{{drink.PicURL}}" width=50% >
+                        <p class="pt-2 m-0 fw-bolder">{{drink.Title}}</p>
+                        <p class="p-0 m-0">{{drink.Price}}</p>
+                        <p class="p-0">{{drink.Description}}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+{% endblock body %}
+{% block footer %}
+{% include 'partials/footer.html' %}
+{% endblock footer %}
+
+
+
+
+
