@@ -1,14 +1,15 @@
 #from flask import Flask, app
 from flask_website import app
-from flask import Flask, render_template, url_for,request,json
+from flask import Flask, render_template, url_for
 from requests.sessions import session
 from werkzeug.utils import redirect
 from werkzeug.wrappers import response
-import random
-lucky_number = 13
-random_number = random.randint(1, 20)
 
 import requests, json
+
+#lucky_number = 13
+#random_number = random.randint(1, 20)
+
 
 @app.route("/")
 @app.route("/home")
@@ -34,10 +35,11 @@ def menu():
         "body" : "We want to share our world of coffee with you.There is nothing to write here, it is just needed to tasted..."
     }
     url = "https://opensheet.vercel.app/1Xt48Tfm0Nf6ITDM-PaQx6PyVRNyJUPjRcy5UoqdKtsQ/Menu"
-    response = requests.get(url)
+    #response = requests.get(url)
+    response = requests.request("GET", url)
     data = response.json()
     return render_template('menu.html', title='Menu', items=data, content=jumbotron)
-
+    
 @app.route("/team")
 def team():
     jumbotron = {
