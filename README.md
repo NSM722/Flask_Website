@@ -21,6 +21,12 @@ Within the activated environment, use the following command to install Flask:
 ```python
 $ pip install Flask
 ```
+#### How to get a Google Sheet as JSON
+The site menu is editable from googlesheets therefore user-friendly for anyone with no coding experience
+
+It's possible for anyone with access to the sheet to edit the prices
+
+Follow this link for more information on how to apply this feature [Google Sheet as JSON](https://benborgers.com/posts/google-sheets-json "Google Sheet as JSON")
 
 
 
